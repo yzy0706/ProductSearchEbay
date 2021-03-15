@@ -1,0 +1,31 @@
+
+<html>
+    <body>
+        <button id="target">
+            test
+        </button>
+
+        <div id="result"> 
+        </div>
+    </body>
+    <script
+    ></script>
+
+    <script>
+        // id
+        $( "#target" ).click(function() {
+            $.ajax({
+                url: "http://localhost:3000/test",
+                data: {
+                zipcode: 97201
+                },
+
+                // excute result 
+                success: function( result ) {
+                    a=$("#results");
+                    console.log(a)
+                }
+            });
+        });
+    </script>
+</html>
