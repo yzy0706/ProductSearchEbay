@@ -17,7 +17,7 @@ app.get("/test", function(req, res){
     console.log("Test");
     // const address = url.buildSearchUrl(options);
     // console.log(req);
-    res.json("hello");
+    res.json("Product Search Ebay");
 })
 
 app.listen(port, function(){
